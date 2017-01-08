@@ -1,0 +1,4 @@
+
+.news-focus swiper-item image{
+    width: 100%;
+}

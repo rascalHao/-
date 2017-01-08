@@ -1,1 +1,10 @@
-新闻
+<view>
+    <!--<swiper class="news-focus" indicator-dots="true" autoplay="true">
+        <block wx:for="{{newsFocusImgUrls}}">
+            <swiper-item v-if="{{index < 4}}">
+                <image src="{{item.imageurls[0].url}}"></image>
+            </swiper-item>
+            <text>{{index}}</text>
+        </block>
+    </swiper>  -->
+</view>
