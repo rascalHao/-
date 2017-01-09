@@ -1,10 +1,20 @@
-<view>
-    <!--<swiper class="news-focus" indicator-dots="true" autoplay="true">
-        <block wx:for="{{newsFocusImgUrls}}">
-            <swiper-item v-if="{{index < 4}}">
+ <view>
+    <view>
+        <swiper class="news-focus" indicator-dots="true" autoplay="true" circular="true">
+            <block wx:for="{{newsFocusImgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>  
+    </view>
+    <view class="news-list">
+        <block wx:for="{{newsList}}">
+            <view >
+                <text data-id="{{item.channelId}}">{{item.title}}</text>
+                <text>{{item.desc}}</text>
                 <image src="{{item.imageurls[0].url}}"></image>
-            </swiper-item>
-            <text>{{index}}</text>
+            </view>
         </block>
-    </swiper>  -->
+    </view>
 </view>

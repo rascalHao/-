@@ -2,3 +2,18 @@
 .news-focus swiper-item image{
     width: 100%;
 }
+.news-list{
+    display: flex;
+    flex-direction: column;
+}
+.news-list view{
+    margin-top:100rpx;
+}
+.news-list text{
+    box-sizing: border-box;
+    padding: 0 20rpx;
+    text-indent: 2;
+}
+.news-list image{
+    width: 100%;
+}
