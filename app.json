@@ -1,5 +1,6 @@
 {
     "pages":[
-        "pages/news_view/news-view"
+        "pages/news_view/news-view",
+        "pages/news_details/news-details"
     ]
 }

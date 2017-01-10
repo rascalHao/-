@@ -49,5 +49,15 @@ Page({
             // complete
           }
         })
+    },
+    showDetails:function(event){
+      console.log(event);
+      var data = JSON.stringify(event.currentTarget.dataset.content);
+      wx.navigateTo({
+        'url':'../news_details/news-details?newsDetails='+data,
+        'success':function(){
+          console.log("succeed");
+        }
+      })
     }
 })

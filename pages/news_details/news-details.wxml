@@ -1,0 +1,6 @@
+<view>
+    <block wx:for="{{details}}">
+        <text wx:if="{{item.url ? false : true}}">{{item}}</text>
+        <image style="width:100%" src="{{item.url}}" wx:if="{{item.url ? true :false}}"></image>
+    </block>
+</view>

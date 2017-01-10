@@ -10,7 +10,7 @@
     </view>
     <view class="news-list">
         <block wx:for="{{newsList}}">
-            <view >
+            <view catchtap="showDetails" data-id="{{item.channelId}}" data-content="{{item.allList}}">
                 <text data-id="{{item.channelId}}">{{item.title}}</text>
                 <text>{{item.desc}}</text>
                 <image src="{{item.imageurls[0].url}}"></image>
